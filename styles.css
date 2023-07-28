@@ -1,0 +1,27 @@
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #5478C4;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+h2{
+    color: black;
+    text-align: initial right;
+}
+.carrusel{
+    width: 1200px;
+    display: flex;
+    justify-content:center;
+    align-items:self-end;
+    
+}
+.tarjetas{
+    width: 700px;
+    margin: 250px;
+}
+.taller{
+    width: 800px;
+    margin: 250px;
+}
