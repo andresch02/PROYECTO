@@ -3,134 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>JH ACCESORIOS</title>
 </head>
-<body>
+<body container-fluid data-bs-theme="light">
   <header>
-    <h1 class="JH">José Hidalgo Accesorios JH</h1>
-    
-    </header>
-
-    <section>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Hombre</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mujer</a>
-                  </li>
-                </ul>
-                <span class="navbar-text">
-                  <button type="button" class="btn btn-dark">Conoce más sobre nosotros</button>
-                </span>
-              </div>
+   <section class="section-1">
+    <h5>JH</h5>
+    <h5>ACCESORIOS</h5>
+   </section>
+   <section class="section-2">
+    <section class="header-option-1">Inicio</section>
+    <section class="header-option"><a name="#accesorios">Accesorios</a></section>
+    <section class="header-option"><a href="#mujer">Mujer</a></section>
+    <section class="header-option"><a href="#Hombre">Hombre</a></section>
+    <section class="header-option"><a href="#conoce">Conoce sobre nosotros</a></section>
+    <section class="header-option"><a href="#contacto">Contáctenos</a></section>
+   </section>
+   <section class="section-3">
+    <i class="fa-solid fa-cart-shopping"></i>
+   </section>
+   <button class="btn rounded-fill" onclick="cambiarTema()"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
+  </header>
+  <section class="carrusel">
+    <h1>Accesorios</h1>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img height="500" src="./acces/img/tron.jpeg" class="d-block" alt="tronco">
+        </div>
+        <div class="carousel-item">
+          <img height="500" src="./acces/img/tres.jpg" class="d-block" alt="manillas">
+        </div>
+        <div class="carousel-item">
+          <img height="500" src="./acces/img/plata.jpg" class="d-block" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   </section>
+   <section class="contain-tarjetas">
+    <div class="title-mujer">
+      <h1><a name="mujer">Mujer</a></h1>
+    </div>
+    <div class="tarjetas">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="tarjeta col">
+          <div class="card">
+            <img src="./acces/img/cuello.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Collar Dragón</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-          </nav>
-    </section>
-     <section class="carrusel">
-      <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img height="500" src="./acces/img/tron.jpeg" class="d-block w-100" alt="tronco">
-          </div>
-          <div class="carousel-item">
-            <img height="500" src="./acces/img/tres.jpg" class="d-block w-100" alt="manillas">
-          </div>
-          <div class="carousel-item">
-            <img height="500" src="./acces/img/plata.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="tarjeta col">
+          <div class="card">
+            <img src="./acces/img/bolas.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pulsera Dama</h5>
+              <p class="card-text">Pulera fabricada con maravillosos tejidos en hilo de alta calidad, acompañadas de esferas en el material que prefieras(acero, oro, plata). Ideales para llevarlas en cualquier ocasión o para obsequios.</p>
+            </div>
+          </div>
+        </div>
+        <div  class="tarjeta col" >
+          <div class="card">
+            <img src="./acces/img/infinito.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pulsera Murano</h5>
+              <p class="card-text">!Nuevo¡ Te presentamos nuestra nueva línea Murano donde encontrarás accesorios con tonalidades más vivos y nuestros dijes obtenidos a partir de aleaciones con diferentes metales.</p>
+            </div>
+          </div>
+        </div>
       </div>
-     </section>
-    
+    </div>
+  </section>
 
+  <section class="contain-tarjetas">
+    <div class="title-mujer">
+      <h1><a name="Hombre">Hombre</a></h1>
+    </div>
+    <div class="tarjetas">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="tarjeta col">
+          <div class="card">
+            <img src="./acces/img/cruz.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pulsera con dije</h5>
+              <p class="card-text">En esta oportunidad traemos para ti un increíble accesorio fabricado en cuero sintético, acompañada de una cruz en el material que preferas(acero, oro, plata).</p>
+            </div>
+          </div>
+        </div>
+        <div class="tarjeta col">
+          <div class="card">
+            <img src="./acces/img/dios.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cruz de oro</h5>
+              <p class="card-text">Pulsera fabricada con cuero sintético de la más alta calidad, combinado con una cruz hecha en oro de 18K perfecta para tu día a día.</p>
+            </div>
+          </div>
+        </div>
+        <div  class="tarjeta col" >
+          <div class="card">
+            <img src="./acces/img/pluma.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pulsera pluma</h5>
+              <p class="card-text">Pulsera fabricada en materiales sintéticos y un dije de pluma en acero, con un tejido especial que le dará mucho estilo a todas tus prendas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="conoce-contain">
+    <section class="title-conoce">
+      <h1><a name="conoce">Conoce sobre nosotros</a></h1>
+    </section>
+    <section class="conoce-contain-2">
+      <section class="img-conoce">
+        <img class="img-pa" src="./acces/img/pa.jpg" alt="pa">
+      </section>
+      <section class="text-conoce">
+        <div class="text-conoce-title">Sobre nosotros</div>
+        <div class="text-conoce-lorem">Somos una empresa manizaleña radicada en la ciudad de Barranquilla desde el año 2020. Nuestro principal propósito es brindar estilo a tus mejores outfits con un toque elegante pero siempre basado en la comodidad, nuestros accesorios son fabricados totalmente a mano con materiales 100% amigables con el medio ambiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum beatae velit culpa enim accusamus nesciunt possimus ut, sequi vitae laudantium, ipsam quam maxime doloribus vero fugit commodi aliquam, nihil ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam maxime eveniet quisquam non sapiente reiciendis voluptate, iusto cupiditate sit, neque corrupti tenetur dicta omnis quis odit, eius ipsa assumenda quasi!</div>
+      </section>
+    </section>
    
-<section class="tarjetas">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="./acces/img/cuello.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  </section>
+  <section class="contacto-contain">
+    <section class="title-contacto">
+      <h1><a name="contacto">Contáctenos</a></h1>
+    </section> 
+    <form class="formulario w-50" action="">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="./acces/img/bolas.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">En qué podemos ayudarte?</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="./acces/img/dios.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div  class="col" >
-      <div class="card">
-        <img src="./acces/img/infinito.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-     
-    </section>
-    <section class="taller">
-      <div class="card text-bg-dark">
-        <img src="./acces/img/cruz.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Le apostamos a lo nuestro!</h5>
-          <p class="card-text">Productos 100% colombiano y fabricado a mano</p>
-          <p class="card-text"><small></small></p>
-        </div>
-      </div> 
+        <button id="submit" type="button" class="btn btn-dark">Enviar</button>
+    </form> 
+   
+  </section>
 
-    
+  <footer container-fluid>
+    <section class="footer-1">
+      <a href="">Sugerencias</a>
+      <a href="">Blog</a>
+      <a href="">Trabaja con nosotros</a>
+    </section>
+    <section class="footer-2">
+      © 2023 Todos los derechos reservados | Andrés Hidalgo
+    </section>
+  </footer>
+
+  <img class="btn-whatsapp" id="btn-whatsapp" src="https://clientes.dongee.com/whatsapp.png" alt="" title="Necesitas ayuda?">
+  
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous">
 </script>
+<script src="js.js"></script>
     
 </body>
 </html>
